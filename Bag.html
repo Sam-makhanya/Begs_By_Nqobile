@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nqobile Leathercraft | Handcrafted Premium Leather Bags</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            brown: '#5c3d2e',
+                            dark: '#2b1e16',
+                            tan: '#b87d4b',
+                            light: '#f9f6f0',
+                            gold: '#d4af37'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light font-sans text-stone-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md text-stone-100 border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-serif font-bold tracking-wide text-amber-500 hover:text-amber-400 transition">
+                NQOBILE <span class="text-stone-300 font-sans font-light text-xs tracking-widest uppercase block md:inline">Leathercraft</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#home" class="hover:text-amber-400 transition">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition">About Us</a>
+                <a href="#products" class="hover:text-amber-400 transition">Collection</a>
+                <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/27834752478?text=Hi%20Nqobile,%20I%20would%20like%20to%20inquire%20about%20your%20leather%20bags." 
+                   target="_blank" 
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2 shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp Order</span>
+                </a>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="menu-btn" class="md:hidden text-stone-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-900 border-b border-stone-800 px-6 py-4 space-y-3 font-medium uppercase text-sm">
+            <a href="#home" class="block text-stone-300 hover:text-amber-400 transition py-1">Home</a>
+            <a href="#about" class="block text-stone-300 hover:text-amber-400 transition py-1">About Us</a>
+            <a href="#products" class="block text-stone-300 hover:text-amber-400 transition py-1">Collection</a>
+            <a href="#services" class="block text-stone-300 hover:text-amber-400 transition py-1">Services</a>
+            <a href="#contact" class="block text-stone-300 hover:text-amber-400 transition py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-stone-900 text-white min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="1.jpeg" alt="Hero Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-amber-400 font-medium tracking-widest uppercase text-sm">Authentic South African Craftsmanship</span>
+                <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight">Timeless Elegance, Built to Last a Lifetime.</h1>
+                <p class="text-stone-300 text-lg font-light leading-relaxed">
+                    Discover luxury, handcrafted genuine leather bags created by Nqobile. Designed for professionals, travelers, and style enthusiasts.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3.5 rounded-md font-medium shadow-lg transition">View Collection</a>
+                    <a href="#about" class="border border-stone-400 hover:border-white hover:text-white text-stone-300 px-8 py-3.5 rounded-md font-medium transition">Our Story</a>
+                </div>
+            </div>
+            <div class="hidden md:block relative">
+                <img src="1.jpeg" alt="Featured Leather Bag" class="rounded-xl shadow-2xl border-4 border-stone-700/50 object-cover w-full h-[480px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="2.jpeg" alt="Nqobile Leathercraft" class="rounded-xl shadow-xl w-full h-[450px] object-cover">
+                <div class="absolute -bottom-6 -right-6 bg-brand-brown text-white p-6 rounded-lg hidden sm:block shadow-xl">
+                    <p class="font-serif text-3xl font-bold">100%</p>
+                    <p class="text-xs uppercase tracking-wider text-amber-200">Genuine Leather</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <span class="text-amber-700 font-semibold tracking-widest uppercase text-xs">About Nqobile Leathercraft</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900">Crafted with Passion, Made for Distinction</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Founded and curated by **Nqobile**, our studio specializes in creating premium leather goods that combine practical durability with refined aesthetics. Every stitch, buckle, and panel is designed with meticulous attention to detail.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Whether you need a durable briefcase for work or an adventurous backpack for daily travel, our collection delivers unmatched South African craftsmanship.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4 border-t border-stone-100">
+                    <div>
+                        <h4 class="font-bold text-stone-900">Handcrafted Finish</h4>
+                        <p class="text-sm text-stone-500">Carefully detailed handles and brass buckles.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-900">Direct WhatsApp Orders</h4>
+                        <p class="text-sm text-stone-500">Instant response and personalized service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold tracking-widest uppercase text-xs">Our Catalog</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900 mt-2">Explore the Collection</h2>
+                <p class="text-stone-600 mt-4">Click "Order" on any item to open the details form and send your order directly via WhatsApp.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="1.jpeg" alt="Executive Dual-Pocket Briefcase" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Briefcase</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Executive Dual-Pocket Briefcase</h3>
+                        <p class="text-xs text-stone-500 mb-4">Rich mahogany leather with dual front buckle pockets.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #01</span>
+                            <button onclick="openOrderModal('Executive Dual-Pocket Briefcase (Image 1)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="2.jpeg" alt="Classic Sleek Messenger" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Satchel</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Classic Sleek Messenger</h3>
+                        <p class="text-xs text-stone-500 mb-4">Deep brown textured finish with reinforced stitching.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #02</span>
+                            <button onclick="openOrderModal('Classic Sleek Messenger (Image 2)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="3.jpeg" alt="Tan Heritage Flap Satchel" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Briefcase</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Tan Heritage Flap Satchel</h3>
+                        <p class="text-xs text-stone-500 mb-4">Warm tan hide featuring a full protective front flap.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #03</span>
+                            <button onclick="openOrderModal('Tan Heritage Flap Satchel (Image 3)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="4.jpeg" alt="Cognac Roll-Top Backpack" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Backpack</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Cognac Roll-Top Backpack</h3>
+                        <p class="text-xs text-stone-500 mb-4">Spacious top-zippered backpack with front pouch.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #04</span>
+                            <button onclick="openOrderModal('Cognac Roll-Top Backpack (Image 4)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="5.jpeg" alt="Minimalist Flap Backpack" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Backpack</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Minimalist Flap Backpack</h3>
+                        <p class="text-xs text-stone-500 mb-4">Clean lines with center strap buckle closure.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #05</span>
+                            <button onclick="openOrderModal('Minimalist Flap Backpack (Image 5)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="6.jpeg" alt="Dark Chestnut Utility Pack" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Backpack</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Dark Chestnut Utility Pack</h3>
+                        <p class="text-xs text-stone-500 mb-4">Multiple zip compartments with sturdy shoulder straps.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #06</span>
+                            <button onclick="openOrderModal('Dark Chestnut Utility Pack (Image 6)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="7.jpeg" alt="Smooth Auburn City Pack" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Backpack</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Smooth Auburn City Pack</h3>
+                        <p class="text-xs text-stone-500 mb-4">Sleek polished finish with a clean front zip pocket.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #07</span>
+                            <button onclick="openOrderModal('Smooth Auburn City Pack (Image 7)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="8.jpeg" alt="Honey Tan Commuter Pack" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-900/80 text-white text-xs px-3 py-1 rounded-full">Backpack</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-serif text-lg font-bold text-stone-900 mb-1">Honey Tan Commuter Pack</h3>
+                        <p class="text-xs text-stone-500 mb-4">Dual flap and zip front compartments with silver hardware.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-400">Ref: #08</span>
+                            <button onclick="openOrderModal('Honey Tan Commuter Pack (Image 8)')" class="bg-amber-700 hover:bg-amber-800 text-white text-xs px-4 py-2 rounded font-medium flex items-center gap-1 transition">
+                                <i class="fa-brands fa-whatsapp"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold tracking-widest uppercase text-xs">Bespoke Solutions</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900 mt-2">Services We Offer</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/60 hover:border-amber-500 transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Custom Designs</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Have a specific design or dimension in mind? We offer custom tailormade leather bags based on your needs.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/60 hover:border-amber-500 transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Personalization</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Add personal initials or corporate branding onto your leather bags for a distinct personal touch.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/60 hover:border-amber-500 transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-stone-900 mb-2">Nationwide Courier</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">We ship directly across South Africa. Order securely via WhatsApp and receive door-to-door delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Callout -->
+    <section class="py-16 bg-stone-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-3xl font-serif font-bold">Ready to Own a Handcrafted Leather Piece?</h2>
+            <p class="text-stone-300 max-w-2xl mx-auto text-sm leading-relaxed">
+                Fill out a simple order form or chat directly with **Nqobile** on WhatsApp to request a bespoke order.
+            </p>
+            <div>
+                <button onclick="openOrderModal('General Inquiry / Custom Bag')" 
+                        class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Place an Order Form / Inquiry</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-stone-950 text-stone-400 pt-16 pb-8 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h3 class="text-white font-serif font-bold text-xl mb-4">NQOBILE LEATHERCRAFT</h3>
+                <p class="text-sm leading-relaxed text-stone-400">
+                    Handmade leather briefcases, backpacks, and messenger bags crafted locally in South Africa. Quality that lasts a lifetime.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-xs tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-amber-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-amber-400 transition">About Us</a></li>
+                    <li><a href="#products" class="hover:text-amber-400 transition">Bag Collection</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition">Our Services</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-xs tracking-wider">Direct Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-user text-amber-500"></i>
+                        <span>Nqobile</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i>
+                        <a href="https://wa.me/27834752478" target="_blank" class="hover:text-white transition">+27 83 475 2478</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-amber-500"></i>
+                        <span>South Africa</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-stone-800/80 text-center text-xs text-stone-500">
+            &copy; Nqobile Leathercraft. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Order Form Modal Popup -->
+    <div id="orderModal" class="fixed inset-0 bg-stone-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden relative transform transition-all">
+            
+            <!-- Modal Header -->
+            <div class="bg-stone-900 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="font-serif text-lg font-bold text-amber-400">Order via WhatsApp</h3>
+                <button onclick="closeOrderModal()" class="text-stone-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Form Body -->
+            <form id="orderForm" onsubmit="sendWhatsAppOrder(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Selected Product</label>
+                    <input type="text" id="formProduct" readonly class="w-full bg-stone-100 border border-stone-300 rounded-lg px-3 py-2 text-stone-800 text-sm font-semibold focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Your Full Name *</label>
+                    <input type="text" id="formName" required placeholder="Enter your full name" class="w-full border border-stone-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Delivery City / Address *</label>
+                    <input type="text" id="formAddress" required placeholder="e.g. Pretoria / Johannesburg" class="w-full border border-stone-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Special Notes / Custom Requirements</label>
+                    <textarea id="formNotes" rows="3" placeholder="e.g. Quantity, initial engraving requests..." class="w-full border border-stone-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none"></textarea>
+                </div>
+
+                <div class="pt-2 flex items-center gap-3">
+                    <button type="button" onclick="closeOrderModal()" class="w-1/3 bg-stone-200 hover:bg-stone-300 text-stone-700 py-2.5 rounded-lg text-sm font-medium transition">
+                        Cancel
+                    </button>
+                    <button type="submit" class="w-2/3 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg text-sm font-semibold flex items-center justify-center gap-2 shadow-md transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        Send to WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactive Controls -->
+    <script>
+        // Mobile Navigation Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking menu items
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // WhatsApp Order Modal Logic
+        const orderModal = document.getElementById('orderModal');
+        const formProduct = document.getElementById('formProduct');
+
+        function openOrderModal(productName) {
+            formProduct.value = productName;
+            orderModal.classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            orderModal.classList.add('hidden');
+        }
+
+        // Send Form Data to WhatsApp (+27 83 475 2478)
+        function sendWhatsAppOrder(e) {
+            e.preventDefault();
+            
+            const product = document.getElementById('formProduct').value;
+            const name = document.getElementById('formName').value;
+            const address = document.getElementById('formAddress').value;
+            const notes = document.getElementById('formNotes').value;
+
+            // Format message
+            let message = `Hi Nqobile,\n\nI would like to place an order on your website:\n`;
+            message += `-----------------------------\n`;
+            message += `*Product:* ${product}\n`;
+            message += `*Client Name:* ${name}\n`;
+            message += `*Location:* ${address}\n`;
+            if (notes.trim() !== "") {
+                message += `*Notes:* ${notes}\n`;
+            }
+            message += `-----------------------------\n`;
+            message += `Please advise on payment and delivery options. Thank you!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/27834752478?text=${encodedMessage}`;
+
+            // Open WhatsApp in new tab and close modal
+            window.open(whatsappUrl, '_blank');
+            closeOrderModal();
+        }
+    </script>
+
+</body>
+</html>
